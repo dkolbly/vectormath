@@ -4,8 +4,17 @@
 
 package vectormath
 
+type Scalar float32
+
+type Vector2 struct {
+	X Scalar	`json:"x"`
+	Y Scalar	`json:"y"`
+}
+
 type Vector3 struct {
-	X, Y, Z, _ float32
+	X float32	`json:"x"`
+	Y float32	`json:"y"`
+	Z float32	`json:"z"`
 }
 
 type Vector4 struct {
@@ -13,7 +22,7 @@ type Vector4 struct {
 }
 
 type Point3 struct {
-	X, Y, Z, _ float32
+	X, Y, Z float32
 }
 
 type Quat struct {
